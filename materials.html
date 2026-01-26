@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>المواد الدراسية</title>
+
+  <!-- Bootstrap RTL -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+
+  <style>
+    body{
+      font-family: "Tajawal", sans-serif;
+      background:#f6f9fc;
+    }
+
+    .course-card{
+      border-radius:20px;
+      overflow:hidden;
+      text-decoration:none;
+      color:#fff;
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+      transition:0.3s;
+      display:block;
+    }
+    .course-card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card-hero{
+      padding:40px 25px;
+      min-height:140px;
+      position:relative;
+    }
+
+    .card-hero h4{
+      font-weight:800;
+    }
+
+    .card-body-custom{
+      background:#fff;
+      color:#333;
+      padding:20px;
+      border-radius:0 0 20px 20px;
+    }
+
+    .meta{
+      display:flex;
+      gap:15px;
+      font-size:14px;
+      color:#666;
+    }
+
+    /* ألوان المواد */
+    .english{background:linear-gradient(135deg,#16a34a,#22c55e);}
+    .math{background:linear-gradient(135deg,#2563eb,#3b82f6);}
+    .science{background:linear-gradient(135deg,#a855f7,#ec4899);}
+    .arabic{background:linear-gradient(135deg,#f59e0b,#fb923c);}
+  </style>
+</head>
+
+<body>
+
+<div class="container py-5">
+<a href="index.html" class="back-link">
+  <i class="fa-solid fa-arrow-right"></i>
+  العودة للمواد
+</a>
+  <h2 class="text-center fw-bold mb-2">المواد الدراسية</h2>
+  <p class="text-center text-muted mb-5">
+    اختر المادة التي تريد دراستها وابدأ رحلتك نحو التميز الأكاديمي
+  </p>
+
+  <div class="row g-4">
+
+    <!-- English -->
+    <div class="col-md-6">
+      <a href="english.html" class="course-card">
+        <div class="card-hero english">
+          <h4>اللغة الإنجليزية</h4>
+          <p>طور مهاراتك في القراءة والكتابة والمحادثة</p>
+        </div>
+        <div class="card-body-custom">
+          <div class="meta">
+            <span><i class="fa-solid fa-book"></i> 38 درس</span>
+            <span><i class="fa-solid fa-clock"></i> 95 ساعة</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Math -->
+    <div class="col-md-6">
+      <a href="math.html" class="course-card">
+        <div class="card-hero math">
+          <h4>الرياضيات</h4>
+          <p>تعلم الأساسيات والمفاهيم الرياضية بسهولة</p>
+        </div>
+        <div class="card-body-custom">
+          <div class="meta">
+            <span><i class="fa-solid fa-book"></i> 45 درس</span>
+            <span><i class="fa-solid fa-clock"></i> 120 ساعة</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Science -->
+    <div class="col-md-6">
+      <a href="science.html" class="course-card">
+        <div class="card-hero science">
+          <h4>العلوم</h4>
+          <p>اكتشف عالم العلوم من خلال تجارب عملية</p>
+        </div>
+        <div class="card-body-custom">
+          <div class="meta">
+            <span><i class="fa-solid fa-book"></i> 50 درس</span>
+            <span><i class="fa-solid fa-clock"></i> 130 ساعة</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Arabic -->
+    <div class="col-md-6">
+      <a href="arabic.html" class="course-card">
+        <div class="card-hero arabic">
+          <h4>اللغة العربية</h4>
+          <p>أتقن قواعد اللغة العربية والتعبير</p>
+        </div>
+        <div class="card-body-custom">
+          <div class="meta">
+            <span><i class="fa-solid fa-book"></i> 42 درس</span>
+            <span><i class="fa-solid fa-clock"></i> 110 ساعة</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
